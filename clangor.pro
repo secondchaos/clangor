@@ -6,15 +6,18 @@
 
 QT       += core gui
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets multimedia
 
 TARGET = clangor
 TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        clangormainwindow.cpp
+        clangormainwindow.cpp \
+    songwrapper.cpp
 
-HEADERS  += clangormainwindow.h
+HEADERS  += clangormainwindow.h \
+    songwrapper.h
 
 FORMS    += clangormainwindow.ui
