@@ -6,10 +6,11 @@
 class SongWrapper
 {
 public:
-    SongWrapper();
+    SongWrapper(QString);
 private:
+    void play();
     QString filepath;
-    QMediaPlayer player;
+    QMediaPlayer* player;
 };
 
 #endif // SONGWRAPPER_H

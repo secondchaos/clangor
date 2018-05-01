@@ -6,10 +6,10 @@ SongWrapper::SongWrapper(QString filepath)
 
     player->setMedia(QUrl::fromLocalFile(filepath));
     player->setVolume(50);
-
+    play();
 }
 
-SongWrapper::play() {
+void SongWrapper::play() {
     player->play();
 }
 
